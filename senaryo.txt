@@ -1,0 +1,13 @@
+Senaryo
+Bir müzik şirketi için kullanıcıların hem şarkı yükleyip
+hem şarkı dinleyebildiği bir uygulama istenmiştir.
+
+Kurallar
+Bir kullanıcı çok sayıda şarkı yükleyebilir.
+Bir şarkıyı birden fazla kullanıcı yükleyemez.
+Bir albüm çok sayıda şarkıyı içerebilir.
+Bir şarkı birden fazla albüme dahil olamaz.
+Her şarkı yalnız bir türe sahiptir.
+Bir tür çok sayıda şarkının türü olabilir. 
+Kullanıcı bilgileri boş geçilemez.
+Şarkı bilgileri boş geçilemez.

@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|e:\\projectfiles\\muzik-kutuphanesi\\sistem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|solutionrelative:sistem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|e:\\projectfiles\\muzik-kutuphanesi\\giris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|solutionrelative:giris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|e:\\projectfiles\\muzik-kutuphanesi\\sistem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|solutionrelative:sistem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|e:\\projectfiles\\muzik-kutuphanesi\\sistem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|solutionrelative:sistem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\turekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6748745D-8A4C-42D5-BC81-4E0C6D29394B}|MUZIK-KUTUPHANESI.csproj|solutionrelative:turekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GIRIS.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\GIRIS.cs",
+              "RelativeDocumentMoniker": "GIRIS.cs",
+              "ToolTip": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\GIRIS.cs [Tasar\u0131m]",
+              "RelativeToolTip": "GIRIS.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:58:58.449Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SISTEM.Designer.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.Designer.cs",
+              "RelativeDocumentMoniker": "SISTEM.Designer.cs",
+              "ToolTip": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.Designer.cs",
+              "RelativeToolTip": "SISTEM.Designer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:57:48.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SISTEM.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.cs",
+              "RelativeDocumentMoniker": "SISTEM.cs",
+              "ToolTip": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.cs",
+              "RelativeToolTip": "SISTEM.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAADgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:52:34.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SISTEM.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.cs",
+              "RelativeDocumentMoniker": "SISTEM.cs",
+              "ToolTip": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\SISTEM.cs [Tasar\u0131m]",
+              "RelativeToolTip": "SISTEM.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:19:32.756Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TUREKLE.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\TUREKLE.cs",
+              "RelativeDocumentMoniker": "TUREKLE.cs",
+              "ToolTip": "E:\\ProjectFiles\\MUZIK-KUTUPHANESI\\TUREKLE.cs [Tasar\u0131m]",
+              "RelativeToolTip": "TUREKLE.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:34:46.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
