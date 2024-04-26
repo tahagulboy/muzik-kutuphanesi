@@ -52,6 +52,12 @@
     <Compile Include="ALBUMEKLE.Designer.cs">
       <DependentUpon>ALBUMEKLE.cs</DependentUpon>
     </Compile>
+    <Compile Include="KAYIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAYIT.Designer.cs">
+      <DependentUpon>KAYIT.cs</DependentUpon>
+    </Compile>
     <Compile Include="SARKIYUKLE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GIRIS.resx">
       <DependentUpon>GIRIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAYIT.resx">
+      <DependentUpon>KAYIT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

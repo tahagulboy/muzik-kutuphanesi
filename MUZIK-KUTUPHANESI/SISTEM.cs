@@ -20,7 +20,7 @@ namespace MUZIK_KUTUPHANESI
         public SISTEM()
         {
             InitializeComponent();
-            connection = new SqlConnection("Data Source = DESKTOP-2DF58T4;Initial Catalog = Depo;Integrated Security = true;");
+            connection = new SqlConnection("Data Source = DESKTOP-2DF58T4;Initial Catalog = Muzik;Integrated Security = true;");
         }
 
         private void SISTEM_Load(object sender, EventArgs e)
