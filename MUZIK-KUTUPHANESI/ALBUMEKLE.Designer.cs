@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbAlbumAdi = new System.Windows.Forms.TextBox();
+            this.btAlbumEkle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,33 +53,34 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Albüm Adı";
             // 
-            // textBox1
+            // lbAlbumAdi
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(12, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 26);
-            this.textBox1.TabIndex = 8;
+            this.lbAlbumAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbAlbumAdi.Location = new System.Drawing.Point(12, 73);
+            this.lbAlbumAdi.Name = "lbAlbumAdi";
+            this.lbAlbumAdi.Size = new System.Drawing.Size(190, 26);
+            this.lbAlbumAdi.TabIndex = 8;
             // 
-            // button1
+            // btAlbumEkle
             // 
-            this.button1.Location = new System.Drawing.Point(12, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 32);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btAlbumEkle.Location = new System.Drawing.Point(12, 111);
+            this.btAlbumEkle.Name = "btAlbumEkle";
+            this.btAlbumEkle.Size = new System.Drawing.Size(190, 32);
+            this.btAlbumEkle.TabIndex = 10;
+            this.btAlbumEkle.Text = "Ekle";
+            this.btAlbumEkle.UseVisualStyleBackColor = true;
+            this.btAlbumEkle.Click += new System.EventHandler(this.btAlbumEkle_Click);
             // 
-            // Form1
+            // ALBUMEKLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(219, 155);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btAlbumEkle);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbAlbumAdi);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "ALBUMEKLE";
             this.Text = "Albüm Ekle";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,7 +91,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox lbAlbumAdi;
+        private System.Windows.Forms.Button btAlbumEkle;
     }
 }

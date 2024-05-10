@@ -18,7 +18,7 @@ namespace MUZIK_KUTUPHANESI
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btGirisYap_Click(object sender, EventArgs e)
         {
             string email = txtEMAIL.Text;
             string password = txtPASSWORD.Text;
@@ -31,7 +31,7 @@ namespace MUZIK_KUTUPHANESI
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT COUNT(*) FROM Kullanicilar WHERE Eposta = @Email AND Parola = @Password";
+                string query = "SELECT KullaniciID FROM Kullanicilar WHERE Eposta = @Email AND Parola = @Password";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
@@ -40,10 +40,26 @@ namespace MUZIK_KUTUPHANESI
                 {
                     connection.Open();
                     int userCount = (int)command.ExecuteScalar();
+                    int loggedInUserID = -1;
+                    string kullaniciAdi = "";
                     if (userCount > 0)
                     {
                         MessageBox.Show("Giriş başarılı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        query = "SELECT KullaniciID FROM Kullanicilar WHERE Eposta = @Email AND Parola = @Password";
+                        command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Password", password);
+                        loggedInUserID = (int)command.ExecuteScalar();
+
+                        query = "SELECT KullaniciAdi FROM Kullanicilar WHERE KullaniciID = @UserID";
+                        command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@UserID", loggedInUserID);
+                        kullaniciAdi = (string)command.ExecuteScalar();
+
                         SISTEM anaSayfa = new SISTEM();
+                        anaSayfa.loggedInUserID = loggedInUserID;
+                        anaSayfa.kullaniciAdi = kullaniciAdi;
                         anaSayfa.Show();
                         this.Hide();
                     }
@@ -59,7 +75,7 @@ namespace MUZIK_KUTUPHANESI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btKayitOl_Click(object sender, EventArgs e)
         {
             KAYIT kayit = new KAYIT();
             kayit.Show();

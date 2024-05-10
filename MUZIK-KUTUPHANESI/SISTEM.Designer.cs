@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SISTEM));
-            this.sarkiListesi = new System.Windows.Forms.DataGridView();
+            this.dtSarkiListesi = new System.Windows.Forms.DataGridView();
             this.aramaKutusu = new System.Windows.Forms.TextBox();
-            this.araButonu = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.sarkiListesi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.btAra = new System.Windows.Forms.Button();
+            this.btSarkiYukle = new System.Windows.Forms.Button();
+            this.lbKullaniciAdi = new System.Windows.Forms.Label();
+            this.btAlbumEkle = new System.Windows.Forms.Button();
+            this.btTurEkle = new System.Windows.Forms.Button();
+            this.btCikisYap = new System.Windows.Forms.Button();
+            this.btSil = new System.Windows.Forms.Button();
+            this.musicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.btDuzenle = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtSarkiListesi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPlayer)).BeginInit();
             this.SuspendLayout();
             // 
-            // sarkiListesi
+            // dtSarkiListesi
             // 
-            this.sarkiListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sarkiListesi.Location = new System.Drawing.Point(12, 47);
-            this.sarkiListesi.Name = "sarkiListesi";
-            this.sarkiListesi.Size = new System.Drawing.Size(573, 352);
-            this.sarkiListesi.TabIndex = 0;
+            this.dtSarkiListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtSarkiListesi.Location = new System.Drawing.Point(12, 47);
+            this.dtSarkiListesi.Name = "dtSarkiListesi";
+            this.dtSarkiListesi.Size = new System.Drawing.Size(573, 353);
+            this.dtSarkiListesi.TabIndex = 0;
             // 
             // aramaKutusu
             // 
@@ -60,117 +60,121 @@
             this.aramaKutusu.Size = new System.Drawing.Size(474, 31);
             this.aramaKutusu.TabIndex = 1;
             // 
-            // araButonu
+            // btAra
             // 
-            this.araButonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.araButonu.Location = new System.Drawing.Point(493, 10);
-            this.araButonu.Name = "araButonu";
-            this.araButonu.Size = new System.Drawing.Size(92, 31);
-            this.araButonu.TabIndex = 2;
-            this.araButonu.Text = "Ara";
-            this.araButonu.UseVisualStyleBackColor = true;
-            this.araButonu.Click += new System.EventHandler(this.araButonu_Click);
+            this.btAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btAra.Location = new System.Drawing.Point(493, 10);
+            this.btAra.Name = "btAra";
+            this.btAra.Size = new System.Drawing.Size(92, 31);
+            this.btAra.TabIndex = 2;
+            this.btAra.Text = "Ara";
+            this.btAra.UseVisualStyleBackColor = true;
+            this.btAra.Click += new System.EventHandler(this.btAra_Click);
             // 
-            // button2
+            // btSarkiYukle
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(597, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 39);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Şarkı Yükle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSarkiYukle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btSarkiYukle.Location = new System.Drawing.Point(597, 47);
+            this.btSarkiYukle.Name = "btSarkiYukle";
+            this.btSarkiYukle.Size = new System.Drawing.Size(197, 39);
+            this.btSarkiYukle.TabIndex = 3;
+            this.btSarkiYukle.Text = "Şarkı Yükle";
+            this.btSarkiYukle.UseVisualStyleBackColor = true;
+            this.btSarkiYukle.Click += new System.EventHandler(this.btSarkiYukle_Click);
             // 
-            // label1
+            // lbKullaniciAdi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(591, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 31);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Kullanıcı Adı";
+            this.lbKullaniciAdi.AutoSize = true;
+            this.lbKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbKullaniciAdi.Location = new System.Drawing.Point(593, 10);
+            this.lbKullaniciAdi.Name = "lbKullaniciAdi";
+            this.lbKullaniciAdi.Size = new System.Drawing.Size(113, 24);
+            this.lbKullaniciAdi.TabIndex = 10;
+            this.lbKullaniciAdi.Text = "Kullanıcı Adı";
             // 
-            // button3
+            // btAlbumEkle
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(597, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 39);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Albüm Ekle";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btAlbumEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btAlbumEkle.Location = new System.Drawing.Point(597, 92);
+            this.btAlbumEkle.Name = "btAlbumEkle";
+            this.btAlbumEkle.Size = new System.Drawing.Size(197, 39);
+            this.btAlbumEkle.TabIndex = 12;
+            this.btAlbumEkle.Text = "Albüm Ekle";
+            this.btAlbumEkle.UseVisualStyleBackColor = true;
+            this.btAlbumEkle.Click += new System.EventHandler(this.btAlbumEkle_Click);
             // 
-            // button4
+            // btTurEkle
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(597, 286);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 39);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Tür Ekle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btTurEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btTurEkle.Location = new System.Drawing.Point(597, 137);
+            this.btTurEkle.Name = "btTurEkle";
+            this.btTurEkle.Size = new System.Drawing.Size(197, 39);
+            this.btTurEkle.TabIndex = 13;
+            this.btTurEkle.Text = "Tür Ekle";
+            this.btTurEkle.UseVisualStyleBackColor = true;
+            this.btTurEkle.Click += new System.EventHandler(this.btTurEkle_Click);
             // 
-            // button5
+            // btCikisYap
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(597, 392);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 46);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "Çıkış Yap";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btCikisYap.Location = new System.Drawing.Point(597, 392);
+            this.btCikisYap.Name = "btCikisYap";
+            this.btCikisYap.Size = new System.Drawing.Size(197, 46);
+            this.btCikisYap.TabIndex = 14;
+            this.btCikisYap.Text = "Çıkış Yap";
+            this.btCikisYap.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btSil
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Location = new System.Drawing.Point(597, 335);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 51);
-            this.button7.TabIndex = 16;
-            this.button7.Text = "Sil";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btSil.Location = new System.Drawing.Point(597, 335);
+            this.btSil.Name = "btSil";
+            this.btSil.Size = new System.Drawing.Size(197, 51);
+            this.btSil.TabIndex = 16;
+            this.btSil.Text = "Sil";
+            this.btSil.UseVisualStyleBackColor = true;
             // 
-            // axWindowsMediaPlayer1
+            // musicPlayer
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 392);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(573, 46);
-            this.axWindowsMediaPlayer1.TabIndex = 11;
+            this.musicPlayer.Enabled = true;
+            this.musicPlayer.Location = new System.Drawing.Point(12, 392);
+            this.musicPlayer.Name = "musicPlayer";
+            this.musicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("musicPlayer.OcxState")));
+            this.musicPlayer.Size = new System.Drawing.Size(573, 46);
+            this.musicPlayer.TabIndex = 11;
+            this.musicPlayer.Enter += new System.EventHandler(this.musicPlayer_Enter);
             // 
-            // label2
+            // btDuzenle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(592, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Standart Kullanıcı";
+            this.btDuzenle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btDuzenle.Location = new System.Drawing.Point(597, 278);
+            this.btDuzenle.Name = "btDuzenle";
+            this.btDuzenle.Size = new System.Drawing.Size(197, 51);
+            this.btDuzenle.TabIndex = 17;
+            this.btDuzenle.Text = "Düzenle";
+            this.btDuzenle.UseVisualStyleBackColor = true;
             // 
             // SISTEM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.araButonu);
+            this.Controls.Add(this.btDuzenle);
+            this.Controls.Add(this.btSil);
+            this.Controls.Add(this.btCikisYap);
+            this.Controls.Add(this.btTurEkle);
+            this.Controls.Add(this.btAlbumEkle);
+            this.Controls.Add(this.musicPlayer);
+            this.Controls.Add(this.lbKullaniciAdi);
+            this.Controls.Add(this.btSarkiYukle);
+            this.Controls.Add(this.btAra);
             this.Controls.Add(this.aramaKutusu);
-            this.Controls.Add(this.sarkiListesi);
+            this.Controls.Add(this.dtSarkiListesi);
             this.Name = "SISTEM";
             this.Text = "Soundtopia: Ana Sayfa";
             this.Load += new System.EventHandler(this.SISTEM_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.sarkiListesi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtSarkiListesi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,16 +182,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView sarkiListesi;
+        private System.Windows.Forms.DataGridView dtSarkiListesi;
         private System.Windows.Forms.TextBox aramaKutusu;
-        private System.Windows.Forms.Button araButonu;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btAra;
+        private System.Windows.Forms.Button btSarkiYukle;
+        private System.Windows.Forms.Label lbKullaniciAdi;
+        private AxWMPLib.AxWindowsMediaPlayer musicPlayer;
+        private System.Windows.Forms.Button btAlbumEkle;
+        private System.Windows.Forms.Button btTurEkle;
+        private System.Windows.Forms.Button btCikisYap;
+        private System.Windows.Forms.Button btSil;
+        private System.Windows.Forms.Button btDuzenle;
     }
 }
