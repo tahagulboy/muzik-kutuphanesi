@@ -38,8 +38,8 @@
             this.btTurEkle = new System.Windows.Forms.Button();
             this.btCikisYap = new System.Windows.Forms.Button();
             this.btSil = new System.Windows.Forms.Button();
-            this.musicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.btDuzenle = new System.Windows.Forms.Button();
+            this.musicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.dtSarkiListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicPlayer)).BeginInit();
             this.SuspendLayout();
@@ -123,6 +123,7 @@
             this.btCikisYap.TabIndex = 14;
             this.btCikisYap.Text = "Çıkış Yap";
             this.btCikisYap.UseVisualStyleBackColor = true;
+            this.btCikisYap.Click += new System.EventHandler(this.btCikisYap_Click);
             // 
             // btSil
             // 
@@ -133,16 +134,7 @@
             this.btSil.TabIndex = 16;
             this.btSil.Text = "Sil";
             this.btSil.UseVisualStyleBackColor = true;
-            // 
-            // musicPlayer
-            // 
-            this.musicPlayer.Enabled = true;
-            this.musicPlayer.Location = new System.Drawing.Point(12, 392);
-            this.musicPlayer.Name = "musicPlayer";
-            this.musicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("musicPlayer.OcxState")));
-            this.musicPlayer.Size = new System.Drawing.Size(573, 46);
-            this.musicPlayer.TabIndex = 11;
-            this.musicPlayer.Enter += new System.EventHandler(this.musicPlayer_Enter);
+            this.btSil.Click += new System.EventHandler(this.btSil_Click);
             // 
             // btDuzenle
             // 
@@ -153,6 +145,17 @@
             this.btDuzenle.TabIndex = 17;
             this.btDuzenle.Text = "Düzenle";
             this.btDuzenle.UseVisualStyleBackColor = true;
+            this.btDuzenle.Click += new System.EventHandler(this.btDuzenle_Click);
+            // 
+            // musicPlayer
+            // 
+            this.musicPlayer.Enabled = true;
+            this.musicPlayer.Location = new System.Drawing.Point(12, 392);
+            this.musicPlayer.Name = "musicPlayer";
+            this.musicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("musicPlayer.OcxState")));
+            this.musicPlayer.Size = new System.Drawing.Size(573, 46);
+            this.musicPlayer.TabIndex = 11;
+            this.musicPlayer.Enter += new System.EventHandler(this.musicPlayer_Enter);
             // 
             // SISTEM
             // 

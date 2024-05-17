@@ -58,6 +58,12 @@
     <Compile Include="KAYIT.Designer.cs">
       <DependentUpon>KAYIT.cs</DependentUpon>
     </Compile>
+    <Compile Include="SARKIDUZENLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SARKIDUZENLE.Designer.cs">
+      <DependentUpon>SARKIDUZENLE.cs</DependentUpon>
+    </Compile>
     <Compile Include="SARKIYUKLE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SARKIDUZENLE.resx">
+      <DependentUpon>SARKIDUZENLE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SARKIYUKLE.resx">
       <DependentUpon>SARKIYUKLE.cs</DependentUpon>
     </EmbeddedResource>

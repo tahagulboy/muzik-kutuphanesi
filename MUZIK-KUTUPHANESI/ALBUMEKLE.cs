@@ -38,6 +38,7 @@ namespace MUZIK_KUTUPHANESI
                 connection.Close();
 
                 MessageBox.Show("Albüm Eklendi!");
+                this.Hide();
             }
             catch (Exception ex)
             {

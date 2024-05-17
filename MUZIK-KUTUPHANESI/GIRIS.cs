@@ -39,29 +39,31 @@ namespace MUZIK_KUTUPHANESI
                 try
                 {
                     connection.Open();
-                    int userCount = (int)command.ExecuteScalar();
-                    int loggedInUserID = -1;
-                    string kullaniciAdi = "";
-                    if (userCount > 0)
+                    object result = command.ExecuteScalar();
+
+                    if (result != null && int.TryParse(result.ToString(), out int loggedInUserID))
                     {
                         MessageBox.Show("Giriş başarılı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        query = "SELECT KullaniciID FROM Kullanicilar WHERE Eposta = @Email AND Parola = @Password";
-                        command = new SqlCommand(query, connection);
-                        command.Parameters.AddWithValue("@Email", email);
-                        command.Parameters.AddWithValue("@Password", password);
-                        loggedInUserID = (int)command.ExecuteScalar();
 
                         query = "SELECT KullaniciAdi FROM Kullanicilar WHERE KullaniciID = @UserID";
                         command = new SqlCommand(query, connection);
                         command.Parameters.AddWithValue("@UserID", loggedInUserID);
-                        kullaniciAdi = (string)command.ExecuteScalar();
+                        object kullaniciAdiResult = command.ExecuteScalar();
 
-                        SISTEM anaSayfa = new SISTEM();
-                        anaSayfa.loggedInUserID = loggedInUserID;
-                        anaSayfa.kullaniciAdi = kullaniciAdi;
-                        anaSayfa.Show();
-                        this.Hide();
+                        if (kullaniciAdiResult != null)
+                        {
+                            string kullaniciAdi = kullaniciAdiResult.ToString();
+
+                            SISTEM anaSayfa = new SISTEM();
+                            anaSayfa.loggedInUserID = loggedInUserID;
+                            anaSayfa.kullaniciAdi = kullaniciAdi;
+                            anaSayfa.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı adı bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
@@ -74,6 +76,7 @@ namespace MUZIK_KUTUPHANESI
                 }
             }
         }
+
 
         private void btKayitOl_Click(object sender, EventArgs e)
         {

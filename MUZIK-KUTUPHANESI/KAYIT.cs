@@ -57,6 +57,7 @@ namespace MUZIK_KUTUPHANESI
                         txtUSERNAME.Text = "";
                         txtEMAIL.Text = "";
                         txtPASSWORD.Text = "";
+                        this.Hide();
                     }
                     else
                     {
@@ -80,6 +81,11 @@ namespace MUZIK_KUTUPHANESI
             {
                 return false;
             }
+        }
+
+        private void KAYIT_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

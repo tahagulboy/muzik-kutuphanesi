@@ -103,6 +103,7 @@ namespace MUZIK_KUTUPHANESI
                     sqlCommand.ExecuteNonQuery();
 
                     MessageBox.Show("İşlem başarıyla tamamlandı!");
+                    this.Hide();
                 }
                 else
                 {

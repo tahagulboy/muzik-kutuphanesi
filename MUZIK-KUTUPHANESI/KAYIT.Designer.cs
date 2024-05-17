@@ -108,6 +108,7 @@
             this.txtPASSWORD.Name = "txtPASSWORD";
             this.txtPASSWORD.Size = new System.Drawing.Size(190, 26);
             this.txtPASSWORD.TabIndex = 33;
+            this.txtPASSWORD.Text = "*";
             // 
             // KAYIT
             // 
@@ -124,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.Name = "KAYIT";
             this.Text = "KAYIT";
+            this.Load += new System.EventHandler(this.KAYIT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

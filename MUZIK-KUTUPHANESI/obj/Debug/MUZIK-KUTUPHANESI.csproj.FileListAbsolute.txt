@@ -18,3 +18,4 @@ E:\ProjectFiles\MUZIK-KUTUPHANESI\obj\Debug\MUZIK-KUTUPHANESI.csproj.GenerateRes
 E:\ProjectFiles\MUZIK-KUTUPHANESI\obj\Debug\MUZIK-KUTUPHANESI.csproj.CoreCompileInputs.cache
 E:\ProjectFiles\MUZIK-KUTUPHANESI\obj\Debug\MUZIK-KUTUPHANESI.exe
 E:\ProjectFiles\MUZIK-KUTUPHANESI\obj\Debug\MUZIK-KUTUPHANESI.pdb
+E:\ProjectFiles\MUZIK-KUTUPHANESI\obj\Debug\MUZIK_KUTUPHANESI.SARKIDUZENLE.resources
